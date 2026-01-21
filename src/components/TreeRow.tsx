@@ -10,7 +10,6 @@ interface Props {
 const TreeRow: React.FC<Props> = ({ node, level }) => {
   const [expanded, setExpanded] = useState(false);
   const hasChildren = !!(node.children && node.children.length > 0);
-  const isLeaf = !hasChildren;
 
   return (
     <>
